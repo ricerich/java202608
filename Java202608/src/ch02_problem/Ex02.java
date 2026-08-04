@@ -1,10 +1,37 @@
 package ch02_problem;
 
-public class Ex02 {
+import java.util.Scanner;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class Ex02 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc1 = new Scanner(System.in);
+		
+		System.out.print("2자리의 정수 입력(10~99)>>");
+		int n = sc1.nextInt();
+		
+		if(n<10 || n>99) {
+			System.out.println("10~99 사이의 두 자리수를 입력해주세요!");
+			return;
+		}
+		
+		int ten = n / 10;
+		int one = n % 10;
+		
+		if(ten == one) {
+			System.out.println("Yes! 10의 자리와 1의 자리는 같습니다.");
+		}
+		else {
+			System.out.println("No! 10의 자리와 1의 자리는 다릅니다.");
+		}
+		sc1.close();
 	}
-
 }
+
+
+
+
+
+
+
