@@ -44,7 +44,7 @@ public class Ex08 {
 			System.out.println("사각형이 겹칩니다!");
 		}
 		else if( x1<=100 && x2>=200 &&
-				 y1>=100 && x2<=200)
+				 y1>=100 && y2<=200)
 		{
 			System.out.println("사각형이 겹칩니다!");
 		}
