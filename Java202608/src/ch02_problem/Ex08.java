@@ -48,6 +48,8 @@ public class Ex08 {
 		{
 			System.out.println("사각형이 겹칩니다!");
 		}
+		else
+			System.out.println("사각형이 겹치지 않습니다!");
 
 	}
 
