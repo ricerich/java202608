@@ -13,8 +13,7 @@ public class Ex11 {
 		if(month>=3 && month<=5){
 			System.out.println("봄");
 		}
-		else if(month>=6 && month<=8)
-		{
+		else if(month>=6 && month<=8){
 			System.out.println("여름");
 		}
 		else if(month>=9 && month<=11)
