@@ -28,15 +28,17 @@ public class Ex08
 			int n = (int)(Math.random() * 100 + 1);//1~100
 			
 			//6.기존에 입력받은 배열안의 값이, 지금 입력받은 값과 같은지 전부 확인
-			for(int j=0; j<i; j++)//이전까지 입력받은 횟수 i
+			int j=0;
+			for(j=0; j<i; j++)//이전까지 입력받은 횟수 i
 			{
 				if(n == arr1[j]) {
 					i--;
 					break;
 				}
-				else
-					arr1[i] = n;
+				
 			}
+			if(j==i)
+				arr1[i] = n;
 		}
 		
 		//7.배열안의 원소를 출력한다
