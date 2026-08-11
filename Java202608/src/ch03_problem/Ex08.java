@@ -35,7 +35,6 @@ public class Ex08
 					i--;
 					break;
 				}
-				
 			}
 			if(j==i)
 				arr1[i] = n;
