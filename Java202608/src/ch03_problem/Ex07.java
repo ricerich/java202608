@@ -12,7 +12,7 @@ public class Ex07 {
  			arr1[i] = (int)(Math.random() * 10 + 1);//1~10
 		}
 		
-		//3. 배열 값 꺼내서 출력 
+		//3. 배열 값 꺼내서 모든값 출력 
 		for(int i=0; i<arr1.length; ++i) {
 			if(i==0) {
 				System.out.print("랜덤한 정수를 : ");
