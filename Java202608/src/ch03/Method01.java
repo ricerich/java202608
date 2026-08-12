@@ -93,10 +93,7 @@ public class Method01
 		for(int i=0; i<f.length; ++i) {
 			System.out.println("메소드7="+f[i]);
 		}
-		
-		
 	}
-
 }
 
 
