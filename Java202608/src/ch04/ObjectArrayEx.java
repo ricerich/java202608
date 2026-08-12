@@ -16,8 +16,9 @@ public class ObjectArrayEx {
 	{
 		//객체 배열 만들고, 사용하기
 		
-		int arr2 [] = new int[3];
+//		int arr2 [] = new int[3];
 		Circle1 arr1[] = new Circle1[3];
+		
 		
 
 	}
