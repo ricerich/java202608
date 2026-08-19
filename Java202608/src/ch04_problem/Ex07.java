@@ -28,7 +28,12 @@ class MonthSchedule
 	
 	private Day days[];
 	
+	Scanner scanner;
+	
 	public MonthSchedule(int nDays) {
+		
+		scanner = new Scanner(System.in);
+		
 		this.nDays = nDays;
 		days = new Day[nDays];
 		
@@ -39,10 +44,37 @@ class MonthSchedule
 		
 	}
 
-	private void input() {
+	private void input() 
+	{
+		System.out.print("날짜(1~"+nDays+")??");
+		int day = scanner.nextInt();
+		System.out.print("할일(빈칸없이입력)??");
+		String work = scanner.next();
+		
+		if(day<1 || day>nDays) {
+			System.out.println("잘못입력하셨습니다!");
+			System.out.println("1~"+nDays+"일 사이의 수를 입력해주세요!");
+			return;
+		}
+		
+		days[day-1].set(work);
+		
 	}
 
 	private void view() {
+		System.out.print("날짜(1~"+nDays+")??");
+		int day = scanner.nextInt();
+		
+		if(day<1 || day>nDays) {
+			System.out.println("잘못입력하셨습니다!");
+			System.out.println("1~"+nDays+"일 사이의 수를 입력해주세요!");
+			return;
+		}
+		
+		System.out.print(day+"일의 할일은 ");
+		
+		days[day-1].show();
+		
 	}
 
 	private void finish() {
@@ -53,12 +85,10 @@ class MonthSchedule
 	{
 		System.out.println("이번달 스케줄 관리 프로그램.");
 		
-		Scanner sc1 = new Scanner(System.in);
-		
 		while(true) {
 			
 			System.out.print("할일(입력:1, 보기:2, 종료:3)>>");
-			int option = sc1.nextInt();
+			int option = scanner.nextInt();
 					
 			switch(option) 
 			{
