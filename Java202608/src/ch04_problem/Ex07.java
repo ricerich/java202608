@@ -71,7 +71,7 @@ class MonthSchedule
 			return;
 		}
 		
-		System.out.print(day+"일의 할일은 ");
+		System.out.print(day +"일의 할일은 ");
 		
 		days[day-1].show();
 		

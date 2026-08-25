@@ -1,0 +1,9 @@
+package ch05_problem;
+
+public class Ex11 
+{
+	public static void main(String[] args) 
+	{
+
+	}
+}

@@ -111,7 +111,7 @@ public class Ex11 {
 				
 			default :
 				System.out.println("부호를 잘못 입력하셨어요!");
-3 5 * 		}
+		}
 	}
 
 }
